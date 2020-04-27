@@ -17,4 +17,4 @@ class Writing {
 }
 
 let writingH1 = new Writing('h1-text')
-let WritingParagraph = new Writing('paragraph-text')
+let writingParagraph = new Writing('paragraph-text')
