@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffac41;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#h1-text {
+    font-size: 24px;
+}
+
+#h1-text, #paragraph-text {
+    text-transform: uppercase;
+}
+
+#h1-text::after, #paragraph-text::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 1.4ex;
+    margin-left: 8px;
+    background-color: #000;
+    animation: blinking .9s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
