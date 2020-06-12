@@ -1,20 +1,28 @@
 class Writing {
     constructor(elementId) {
-        this.elementEl = document.getElementById(elementId);
-
-        this.initWriting();
+        this.textareaEl = document.querySelector('textarea')
+        this.buttonEl = document.querySelector('button')
+        this.inputEl = document.querySelector('.velocity')
+        this.showText = document.querySelector('.show-text');
+        
+        this.buttonEl.addEventListener('click', () => {
+            let text = this.textareaEl.value
+            let velocity = this.inputEl.value
+            this.initWriting(velocity, ...text);
+        })
     }
 
-    initWriting() {
-        let arrayText = this.elementEl.innerHTML.split('');
-        this.elementEl.innerHTML = '';
+    initWriting(velocity, ...text) {
+        let arrayText = [...text];
+        this.showText.innerHTML = ''
         arrayText.forEach((letter, index) => {
+           
             setTimeout(() => {
-                this.elementEl.innerHTML += letter
-            }, 75 * index);
+                this.showText.innerHTML += letter
+            }, velocity * index);
         })
     }
 }
 
-let writingH1 = new Writing('h1-text')
-let writingParagraph = new Writing('paragraph-text')
+new Writing()
+
