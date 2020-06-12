@@ -1,6 +1,20 @@
 # typewriter-effect
 Efeito máquina de escrever em exibição de texto
 
-**Código extremamente simples:**  
-Basta criar um novo objeto instanciando a classe Writing('idAqui') e  
-passar o id do elemento que contém o texto que deseja animar, como parâmetro para a animação. 
+------------------------------------------
+
+
+<p align="center">
+<img src=".github/image.png" width="800"/>
+  
+  
+------------------------------------------
+
+### Para utilizar:
+
+Clone o projeto via HTTPS, execute este comando:
+
+    git clone https://github.com/maiconboer/typewriter-effect.git
+    
+Não necessita rodar nenhum servidor, basta abrir o index.html (código bastante simples).
+ 
