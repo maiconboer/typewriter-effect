@@ -1,4 +1,4 @@
-# typewriter-effect
+# typewriter-effect :pencil2:
 Efeito máquina de escrever em exibição de texto
 
 ------------------------------------------
